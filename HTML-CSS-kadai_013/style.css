@@ -11,28 +11,27 @@ p{
     width: 100%;
 }
 /*================
-PC用スタイル 
+PC用スタイル
 ===============*/
-@media screen and(min-width:768px){
+@media screen and (min-width:768px){
     /* 横幅設定 */
     body{
         max-width: 1080px;
         min-width: 960px;
         margin: 0 auto 0 auto;
     }
-/* ヘッダー */
-header{
-    display: flex;
-    justify-content: space-between;
-    }
-
     #menu-sp{
         display: none;
     }
     #nav-sp{
         display: none;
     }
-    
+
+/* ヘッダー */
+header{
+    display: flex;
+    justify-content: space-between;
+    }
     /* ロゴ */
     #logo{
         flex: 1;
@@ -72,27 +71,19 @@ header{
 /*====================
  スマホ用スタイル
 ====================*/
-@media screen and (max-widht:767px) {
+@media screen and (max-width: 767px){
+
     body{
         min-width: 375px;
         margin: 0;
-    }
-
-    header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
 
     /* PC用ナビゲーション非表示 */
     #nav-pc{
         display: none;
     }
-
     /* ハンバーガーメニュー */
     #menu-sp{
-        display: block;
-        background-color: #ce933e;
         float: right;
         padding: 0;
     }
@@ -109,11 +100,11 @@ header{
         z-index: 100;
     }
 
-    #nav-sp nav ul{
+    #nav-sp ul{
         padding-left: 0;
     }
 
-    #nav-sp nav li{
+    #nav-sp li{
         list-style: none;
     }
 
@@ -122,7 +113,6 @@ header{
         position: absolute;
         top: 20px;
         right: 20px;
-        border: none;
     }
 
     /* ナビゲーションメニュー用ロゴ */
@@ -134,20 +124,20 @@ header{
         display: block;
     }
 
-    #nav-sp a{
+    #nav-sp a:link{
         color: #ffffff;
     }
 
-    #nav-sp a{
+    #nav-sp a:visited{
         color: #ffffff;
     }
 
-    #nav-sp a{
+    #nav-sp a:hover{
         color: #ffffff;
         text-decoration: underline;
     }
 
-    #nav-sp a{
+    #nav-sp a:active{
         color: #ffffff;
     }
 
@@ -161,5 +151,4 @@ header{
         background-repeat: no-repeat;
         background-position: right top;
     }
-
 }
