@@ -5,3 +5,9 @@ const btn = document.getElementById('btn');
 btn.addEventListener('click',() => {
     console.log('クリックされました！');
 });
+
+const Text = document.getElementById('text');
+
+btn.addEventListener('click',() => {
+    Text.textContent = 'ボタンをクリックしました';
+});
